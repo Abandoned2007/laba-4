@@ -1,1 +1,1 @@
-# python_oop_practic
+# python_oop_laba
