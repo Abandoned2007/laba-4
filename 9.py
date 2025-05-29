@@ -1,9 +1,7 @@
 class Student:
-    name = 'Danila'
-    surname = 'Kostylev'
-    
-    def show(self):
-        return self.name + ' ' + self.surname
-    
+    name = "Anna"
+    surname = "Petrova"
+
 student = Student()
-print(student.name, student.surname)
+print(student.name)    # 'Anna'
+print(student.surname) # 'Petrova'

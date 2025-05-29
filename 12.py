@@ -1,21 +1,21 @@
 class Employee:
-    def __init__(self, name, age, position, salary):
+    def __init__(self, name, salary):
         self.name = name
-        self.age = age
-        self.position = position
         self.salary = salary
 
-    def raise_salary(self, amount=300):
-        self.salary += amount
-        print("Зарплата была увеличена.")
+    def get_name(self):
+        return self.name
 
-    def get_info(self):
-        print("Имя:", self.name)
-        print("Возраст:", self.age)
-        print("Должность:", self.position)
-        print("Зарплата:", self.salary)
+    def get_salary(self):
+        return self.salary
 
-emp1 = Employee("Иван", 25, "менеджер", 3000.0)
-emp1.get_info()  
-emp1.raise_salary()  
-emp1.get_info() 
+    def increase_salary(self):
+        self.salary *= 1.10
+
+# Пример использования
+employee = Employee("Alex", 50000)
+print(employee.get_name())    
+print(employee.get_salary()) 
+
+employee.increase_salary()
+print(employee.get_salary()) 

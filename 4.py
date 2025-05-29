@@ -1,19 +1,20 @@
-class Employee:
-    first_name = None
-    last_name = None
-    age = None
-    salary = None
-    pass    
-employee1 = Employee()
-employee1.first_name = 'Andrey'
-employee1.last_name = 'Kostylev'
-employee1.age = 24
-employee1.salary = 50000
-print(employee1.first_name, employee1.last_name ,employee1.age, employee1.salary)
+#4
+class User():
+user1 = User()
+user2 = User()
+user1.name = 'Oleg'
+user2.name = 'Maksim'
+print(user1.name)
+print(user2.name)
 
+class Employee():
+employee1 = Employee()
 employee2 = Employee()
-employee2.first_name = 'Sergey'
-employee2.last_name = 'Romanov'
-employee2.age = 25
-employee2.salary = 40000
-print(employee2.first_name, employee2.last_name ,employee2.age, employee2.salary)
+employee1.name = 'savanna'
+employee1.salary = 52000
+employee2.name = 'phil'
+employee2.salary = 48000
+print(employee1.name)
+print(employee1.salary)
+print(employee2.name)
+print(employee2.salary)

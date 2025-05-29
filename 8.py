@@ -1,16 +1,18 @@
 class Student:
-    name = 'danila'
-    surname = 'kostylev'
-    
-    def show(self):
-        return self.cape(self.name + ' ' + self.surname)
-        
-    def cape(self,stri):
-        return stri.upper()
-    
-    def iitials(self):
-        return self.cape(self.name[0] + ' ' + self.surname[0])
-student = Student()
-print(student.show())
-print(student.iitials())
+    def __init__(self, name, surname):
+        self.name = name
+        self.surname = surname
+
+    def capitalize_first_letter(self, string):
+        if string:
+            return string[0].upper() + string[1:]
+        return string
+
+    def initials(self):
+        first_initial = self.capitalize_first_letter(self.name)
+        second_initial = self.capitalize_first_letter(self.surname)
+        return f"{first_initial[0]}.{second_initial[0]}."
+
+student = Student("ivan", "ivanov")
+print(student.initials())
 

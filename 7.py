@@ -1,17 +1,17 @@
-class Employee:
-    first_name = None
-    salary = None
-    
-    def show_name(self):
-        print(self.first_name)
-        
-    def show_salary(self):
-        print(self.salary)
-    
-    pass    
-employee = Employee()
-employee.first_name = 'Andrey'
-employee.salary = 50000
-employee.show_name()
-employee.show_salary()
+class User:
+  name = None
+  def show(self):
+    print(self.name)
+user = User()
+user.name = 'oleg' 
+user.show()
 
+class Employee:
+  name = None
+  def salar(self):
+    print(self.name)
+    print(self.salary)
+employee = Employee()
+employee.name = 'alek'
+employee.salary = '370$'
+employee.salar()
